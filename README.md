@@ -24,12 +24,32 @@ Eventually we introduce Juobs.jl, a package for high-level analysis and observab
     2.  Juobs in practie (notebook)
 
 
-## ADerrors.jl main features
+## Julia 
+In order to install Julia plese follow the platform specific instruction at 
+https://julialang.org/downloads/
+
+I suggest Visual Studio Code as editor and IDE, but other options work just fine
+
+## ADerrors.jl 
+
+To install ADerrors please follow the instructions at https://igit.ific.uv.es/alramos/aderrors.jl.
+ADerrors also depends on another package, BDIO.jl. It has to be insalled before hand as explained in the above link.
+
+### Main features
 1.  Dealing with uncertainties 
 2.  Error analysis with the <img src="https://render.githubusercontent.com/render/math?math=\Gamma">-method
 3.  Error propagation in iterative algorithms
 
-## Juobs.jl main features
+## Juobs.jl 
+
+To install Juobs you need to register at https://gitlab.ift.uam-csic.es/users/sign_in and then I can give you access to the Juobs.jl project.
+Once you have the rights, simlpy install it with the Julia package manager:
+
+julia> import pkg
+
+julia> Pkg.add("https://gitlab.ift.uam-csic.es/jugarrio/juobs")
+
+### Main features
 1.  Readers for openQCD output files, compatible with multiple versions
 2.  Computation of LatticeQCD observables
 3.  Advanced fitting routines
